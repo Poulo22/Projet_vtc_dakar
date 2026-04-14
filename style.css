@@ -198,6 +198,29 @@ h3 { font-size: 1.25rem; }
     color: var(--text-primary);
 }
 
+.nav-demo-link {
+    color: var(--accent-green-light) !important;
+    font-weight: 600 !important;
+    position: relative;
+}
+
+.nav-demo-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-green), var(--accent-blue));
+    border-radius: 1px;
+    animation: shimmer 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
 .nav-actions {
     display: flex;
     align-items: center;
