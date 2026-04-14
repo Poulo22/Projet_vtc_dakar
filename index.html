@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FleetVest — Investissement VTC Sécurisé au Sénégal</title>
+    <meta name="description" content="FleetVest sécurise votre investissement automobile VTC au Sénégal. Suivi GPS, transparence financière, maintenance traçable. Gérez votre flotte depuis n'importe où.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
+                        <path d="M8 16L14 10L20 16L14 22Z" fill="white" opacity="0.9"/>
+                        <path d="M14 16L20 10L26 16L20 22Z" fill="white" opacity="0.6"/>
+                        <defs>
+                            <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32">
+                                <stop stop-color="#10B981"/>
+                                <stop offset="1" stop-color="#059669"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span>FleetVest</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#features">Fonctionnalités</a>
+                <a href="#how-it-works">Comment ça marche</a>
+                <a href="#pricing">Tarifs</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#waitlist" class="btn btn-ghost">Se connecter</a>
+                <a href="#waitlist" class="btn btn-primary">Rejoindre la Beta</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-effects">
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge" data-animate="fade-up">
+                <span class="badge-dot"></span>
+                Lancement Beta — Dakar, 2026
+            </div>
+            <h1 data-animate="fade-up" data-delay="100">
+                Investissez dans le <span class="gradient-text">VTC au Sénégal.</span><br>
+                Nous gérons tout.<br>
+                <span class="gradient-text-alt">Vous suivez tout.</span>
+            </h1>
+            <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                La plateforme SaaS qui sécurise l'investissement automobile VTC. 
+                Suivi GPS en temps réel, transparence financière, maintenance traçable — 
+                gérez votre flotte depuis Paris, Montréal ou Dakar.
+            </p>
+            <div class="hero-actions" data-animate="fade-up" data-delay="300">
+                <a href="#waitlist" class="btn btn-primary btn-lg">
+                    <span>Rejoindre la liste d'attente</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#how-it-works" class="btn btn-outline btn-lg">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><polygon points="8,5 16,10 8,15" fill="currentColor"/></svg>
+                    <span>Voir la démo</span>
+                </a>
+            </div>
+            <div class="hero-stats" data-animate="fade-up" data-delay="400">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="15000">0</span>
+                    <span class="hero-stat-label">Véhicules VTC à Dakar</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">3M+</span>
+                    <span class="hero-stat-label">Diaspora sénégalaise</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">$3.5B</span>
+                    <span class="hero-stat-label">Marché ride-hailing Afrique</span>
+                </div>
+            </div>
+        </div>
+        <!-- Dashboard Preview -->
+        <div class="hero-dashboard" data-animate="fade-up" data-delay="500">
+            <div class="dashboard-window">
+                <div class="window-header">
+                    <div class="window-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                    <div class="window-title">FleetVest — Dashboard Propriétaire</div>
+                    <div class="window-actions"></div>
+                </div>
+                <div class="window-content">
+                    <div class="dash-sidebar">
+                        <div class="dash-nav-item active">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                            Dashboard
+                        </div>
+                        <div class="dash-nav-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 000 20 14.5 14.5 0 000-20"/><path d="M2 12h20"/></svg>
+                            GPS Live
+                        </div>
+                        <div class="dash-nav-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                            Finances
+                        </div>
+                        <div class="dash-nav-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                            Maintenance
+                        </div>
+                        <div class="dash-nav-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                            Chauffeurs
+                        </div>
+                    </div>
+                    <div class="dash-main">
+                        <div class="dash-header">
+                            <div>
+                                <h3>Bonjour, Moussa 👋</h3>
+                                <p>Votre flotte performe bien aujourd'hui</p>
+                            </div>
+                            <div class="dash-period">
+                                <span class="period-active">Aujourd'hui</span>
+                                <span>7j</span>
+                                <span>30j</span>
+                            </div>
+                        </div>
+                        <div class="dash-cards">
+                            <div class="dash-card">
+                                <div class="dash-card-icon green">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                                </div>
+                                <div class="dash-card-info">
+                                    <span class="dash-card-label">Revenus du jour</span>
+                                    <span class="dash-card-value">127 500 <small>FCFA</small></span>
+                                    <span class="dash-card-trend up">+12.5% vs hier</span>
+                                </div>
+                            </div>
+                            <div class="dash-card">
+                                <div class="dash-card-icon blue">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4zM8 2v16M16 6v16"/></svg>
+                                </div>
+                                <div class="dash-card-info">
+                                    <span class="dash-card-label">Véhicules actifs</span>
+                                    <span class="dash-card-value">4<small>/5</small></span>
+                                    <span class="dash-card-trend neutral">1 en maintenance</span>
+                                </div>
+                            </div>
+                            <div class="dash-card">
+                                <div class="dash-card-icon purple">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                                </div>
+                                <div class="dash-card-info">
+                                    <span class="dash-card-label">Km parcourus</span>
+                                    <span class="dash-card-value">847 <small>km</small></span>
+                                    <span class="dash-card-trend up">+8.2% vs hier</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mini map -->
+                        <div class="dash-map">
+                            <div class="map-label">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 10-16 0c0 3 2.7 7 8 11.7z"/></svg>
+                                Localisation en temps réel — Dakar
+                            </div>
+                            <div class="map-visual">
+                                <div class="map-grid-lines"></div>
+                                <div class="map-pin pin-1">
+                                    <div class="pin-pulse"></div>
+                                    <div class="pin-dot"></div>
+                                    <div class="pin-label">Toyota Corolla · AB-1234</div>
+                                </div>
+                                <div class="map-pin pin-2">
+                                    <div class="pin-pulse"></div>
+                                    <div class="pin-dot"></div>
+                                    <div class="pin-label">Hyundai Accent · CD-5678</div>
+                                </div>
+                                <div class="map-pin pin-3">
+                                    <div class="pin-pulse"></div>
+                                    <div class="pin-dot"></div>
+                                    <div class="pin-label">Kia Rio · EF-9012</div>
+                                </div>
+                                <div class="map-pin pin-4">
+                                    <div class="pin-pulse"></div>
+                                    <div class="pin-dot"></div>
+                                    <div class="pin-label">Suzuki Dzire · GH-3456</div>
+                                </div>
+                                <!-- Dakar Map Contour -->
+                                <svg class="map-contour" viewBox="0 0 400 200" fill="none">
+                                    <path d="M80 100 Q100 60 140 50 Q180 40 200 55 Q230 70 260 60 Q290 50 310 65 Q330 80 340 100 Q350 130 330 150 Q300 170 260 160 Q220 150 180 155 Q140 160 110 150 Q85 140 80 100Z" stroke="rgba(16,185,129,0.3)" stroke-width="1.5" fill="rgba(16,185,129,0.05)"/>
+                                    <text x="190" y="110" fill="rgba(16,185,129,0.4)" font-size="11" font-family="Inter">DAKAR</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TRUST BAR ============ -->
+    <section class="trust-bar">
+        <div class="container">
+            <p>Compatible avec les plateformes VTC leaders</p>
+            <div class="trust-logos">
+                <div class="trust-logo">
+                    <span class="trust-logo-text">Yango</span>
+                </div>
+                <div class="trust-logo">
+                    <span class="trust-logo-text">Uber</span>
+                </div>
+                <div class="trust-logo">
+                    <span class="trust-logo-text">Heetch</span>
+                </div>
+                <div class="trust-logo">
+                    <span class="trust-logo-text">Bolt</span>
+                </div>
+                <div class="trust-logo">
+                    <span class="trust-logo-text">InDrive</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROBLEM ============ -->
+    <section class="problem-section" id="problem">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Le problème</span>
+                <h2>L'investissement VTC au Sénégal est un <span class="gradient-text">pari risqué</span></h2>
+                <p class="section-desc">80% des investisseurs VTC rencontrent des problèmes majeurs dans les 6 premiers mois. L'opacité tue la confiance.</p>
+            </div>
+            <div class="problem-grid" data-animate="fade-up" data-delay="200">
+                <div class="problem-card">
+                    <div class="problem-icon">💸</div>
+                    <div class="problem-quote">"Mon chauffeur me dit qu'il fait 15 000 FCFA/jour. Je sais qu'il en fait le double."</div>
+                    <div class="problem-author">— Investisseur diaspora, Paris</div>
+                    <div class="problem-label">Revenus opaques</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">📍</div>
+                    <div class="problem-quote">"Mon véhicule a disparu pendant 3 jours. Le chauffeur ne répondait plus."</div>
+                    <div class="problem-author">— Propriétaire, Dakar</div>
+                    <div class="problem-label">Aucune visibilité</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🔧</div>
+                    <div class="problem-quote">"On m'a facturé 350 000 FCFA de réparations. Impossible de vérifier."</div>
+                    <div class="problem-author">— Investisseur, Montréal</div>
+                    <div class="problem-label">Maintenance opaque</div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">😩</div>
+                    <div class="problem-quote">"J'ai changé 4 chauffeurs en 1 an. Trouver quelqu'un de fiable est épuisant."</div>
+                    <div class="problem-author">— Propriétaire de flotte, Thiès</div>
+                    <div class="problem-label">Recrutement chaotique</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">La solution</span>
+                <h2>4 modules pour une <span class="gradient-text">gestion totale</span></h2>
+                <p class="section-desc">FleetVest est le système d'exploitation de votre investissement VTC. Chaque aspect est couvert, tracé, sécurisé.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-animate="fade-up" data-delay="0">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon-wrap green">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3>Marketplace Certifiée</h3>
+                    <p>Publiez votre véhicule et recevez des candidatures de chauffeurs vérifiés. Vérification d'identité, permis, casier — processus d'entretien vidéo intégré.</p>
+                    <ul class="feature-list">
+                        <li>Vérification d'identité KYC</li>
+                        <li>Score de fiabilité chauffeur</li>
+                        <li>Entretien vidéo intégré</li>
+                        <li>Contrat digital signé</li>
+                    </ul>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="100">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon-wrap blue">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 10-16 0c0 3 2.7 7 8 11.7z"/></svg>
+                    </div>
+                    <h3>GPS Temps Réel</h3>
+                    <p>Localisez chaque véhicule de votre flotte à la seconde. Géo-fencing intelligent avec alertes instantanées si sortie de zone autorisée.</p>
+                    <ul class="feature-list">
+                        <li>Tracking live sur carte</li>
+                        <li>Historique des trajets</li>
+                        <li>Alertes géo-fencing</li>
+                        <li>Détection conduite agressive</li>
+                    </ul>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="200">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon-wrap emerald">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                    </div>
+                    <h3>Transparence Financière</h3>
+                    <p>Les revenus sont calculés automatiquement. La répartition propriétaire-chauffeur se fait en un clic — versement direct via Wave ou Orange Money.</p>
+                    <ul class="feature-list">
+                        <li>Revenus via API Yango/Uber</li>
+                        <li>Répartition automatique (%)</li>
+                        <li>Versement Wave / Orange Money</li>
+                        <li>Rapports P&L par véhicule</li>
+                    </ul>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="300">
+                    <div class="feature-card-glow"></div>
+                    <div class="feature-icon-wrap orange">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h3>Écosystème Maintenance</h3>
+                    <p>Réseau de garages certifiés à Dakar. Chaque réparation génère une facture numérique. Maintenance préventive automatisée par kilométrage.</p>
+                    <ul class="feature-list">
+                        <li>Garages partenaires certifiés</li>
+                        <li>Factures numériques auditables</li>
+                        <li>Alertes maintenance préventive</li>
+                        <li>Historique complet du véhicule</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="how-section" id="how-it-works">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Comment ça marche</span>
+                <h2>Opérationnel en <span class="gradient-text">3 étapes</span></h2>
+                <p class="section-desc">De l'achat de votre véhicule au premier versement, FleetVest simplifie tout le processus.</p>
+            </div>
+            <div class="steps-container">
+                <div class="steps-line"></div>
+                <div class="step" data-animate="fade-up" data-delay="0">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Publiez votre véhicule</h3>
+                        <p>Enregistrez votre véhicule sur la plateforme avec ses documents, photos et conditions d'exploitation. Définissez le pourcentage de répartition souhaité.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="step-mockup">
+                            <div class="mock-input">
+                                <span class="mock-label">Véhicule</span>
+                                <span class="mock-value">Toyota Corolla 2023</span>
+                            </div>
+                            <div class="mock-input">
+                                <span class="mock-label">Répartition</span>
+                                <span class="mock-value">60% propriétaire · 40% chauffeur</span>
+                            </div>
+                            <div class="mock-input">
+                                <span class="mock-label">Zone</span>
+                                <span class="mock-value">Dakar — Plateau, Almadies</span>
+                            </div>
+                            <div class="mock-btn">Publier l'annonce →</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step" data-animate="fade-up" data-delay="150">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Recrutez un chauffeur certifié</h3>
+                        <p>Recevez des candidatures de chauffeurs vérifiés. Consultez leur score de fiabilité, historique et passez un entretien vidéo directement sur la plateforme.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="step-mockup">
+                            <div class="mock-driver">
+                                <div class="mock-avatar">AM</div>
+                                <div class="mock-driver-info">
+                                    <span class="mock-driver-name">Abdou M.</span>
+                                    <span class="mock-driver-score">⭐ 4.8 · 2 ans exp.</span>
+                                </div>
+                                <span class="mock-badge">Vérifié ✓</span>
+                            </div>
+                            <div class="mock-driver">
+                                <div class="mock-avatar">FK</div>
+                                <div class="mock-driver-info">
+                                    <span class="mock-driver-name">Fatou K.</span>
+                                    <span class="mock-driver-score">⭐ 4.6 · 3 ans exp.</span>
+                                </div>
+                                <span class="mock-badge">Vérifié ✓</span>
+                            </div>
+                            <div class="mock-driver">
+                                <div class="mock-avatar">IS</div>
+                                <div class="mock-driver-info">
+                                    <span class="mock-driver-name">Ibrahim S.</span>
+                                    <span class="mock-driver-score">⭐ 4.9 · 5 ans exp.</span>
+                                </div>
+                                <span class="mock-badge">Top ★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step" data-animate="fade-up" data-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Suivez tout, en temps réel</h3>
+                        <p>Votre dashboard affiche les revenus, la position GPS, la maintenance et le score de votre chauffeur. Recevez vos versements automatiquement chaque semaine.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="step-mockup">
+                            <div class="mock-revenue">
+                                <div class="mock-rev-header">
+                                    <span>Revenus cette semaine</span>
+                                    <span class="mock-rev-trend">+15%</span>
+                                </div>
+                                <div class="mock-rev-amount">187 500 FCFA</div>
+                                <div class="mock-rev-bar">
+                                    <div class="mock-bar-fill" style="width: 60%">
+                                        <span>Votre part : 112 500</span>
+                                    </div>
+                                    <div class="mock-bar-rest">
+                                        <span>Chauffeur : 75 000</span>
+                                    </div>
+                                </div>
+                                <div class="mock-rev-status">
+                                    <span class="status-dot"></span>
+                                    Versement automatique vendredi via Wave
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SOCIAL PROOF / STATS ============ -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid" data-animate="fade-up">
+                <div class="stat-card">
+                    <div class="stat-value" data-count="15000">0</div>
+                    <div class="stat-label">Véhicules VTC actifs à Dakar</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">250K+</div>
+                    <div class="stat-label">FCFA/mois de revenus moyens par véhicule</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">72h</div>
+                    <div class="stat-label">Délai moyen de mise en relation</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Traçabilité financière et maintenance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOR WHO ============ -->
+    <section class="audience-section" id="audience">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Pour qui ?</span>
+                <h2>Conçu pour <span class="gradient-text">chaque acteur</span> de l'écosystème</h2>
+            </div>
+            <div class="audience-grid">
+                <div class="audience-card" data-animate="fade-up" data-delay="0">
+                    <div class="audience-emoji">🌍</div>
+                    <h3>Investisseur Diaspora</h3>
+                    <p>Gérez votre investissement VTC à Dakar depuis Paris, New York ou Montréal — comme si vous étiez sur place. Tableau de bord 24/7, alertes proactives, rapports automatiques.</p>
+                    <div class="audience-benefit">
+                        <span>✓ Zéro intermédiaire</span>
+                        <span>✓ Paiement en EUR/USD</span>
+                        <span>✓ Accès partout 24/7</span>
+                    </div>
+                </div>
+                <div class="audience-card" data-animate="fade-up" data-delay="150">
+                    <div class="audience-emoji">🏢</div>
+                    <h3>Investisseur Local</h3>
+                    <p>Passez de la gestion artisanale à la gestion professionnelle. Scalez de 1 à 50 véhicules avec le même outil. Tarifs garages négociés, conflits éliminés.</p>
+                    <div class="audience-benefit">
+                        <span>✓ Gestion multi-flotte</span>
+                        <span>✓ Tarifs garages négociés</span>
+                        <span>✓ Scalabilité totale</span>
+                    </div>
+                </div>
+                <div class="audience-card" data-animate="fade-up" data-delay="300">
+                    <div class="audience-emoji">🚗</div>
+                    <h3>Chauffeur Certifié</h3>
+                    <p>Accédez aux meilleurs véhicules. Construisez votre réputation. Profitez de contrats clairs et protégez-vous contre les abus. Votre score vous suit.</p>
+                    <div class="audience-benefit">
+                        <span>✓ Véhicules récents</span>
+                        <span>✓ Réputation portable</span>
+                        <span>✓ Contrat protecteur</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Tarifs</span>
+                <h2>Un investissement qui <span class="gradient-text">se rentabilise</span> dès le 1er mois</h2>
+                <p class="section-desc">4-6% de vos revenus mensuels pour une gestion professionnelle complète.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-animate="fade-up" data-delay="0">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p>Idéal pour un premier véhicule</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">15 000</span>
+                        <span class="price-currency">FCFA/mois</span>
+                    </div>
+                    <div class="pricing-equiv">≈ 23€/mois</div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> 1 véhicule</li>
+                        <li><span class="check">✓</span> Dashboard propriétaire</li>
+                        <li><span class="check">✓</span> Suivi financier basique</li>
+                        <li><span class="check">✓</span> Marketplace chauffeurs</li>
+                        <li><span class="check">✓</span> Notifications SMS & email</li>
+                        <li class="disabled"><span class="cross">—</span> GPS temps réel</li>
+                        <li class="disabled"><span class="cross">—</span> Rapports avancés</li>
+                    </ul>
+                    <a href="#waitlist" class="btn btn-outline btn-block">Commencer</a>
+                </div>
+                <div class="pricing-card popular" data-animate="fade-up" data-delay="150">
+                    <div class="popular-badge">Le plus populaire</div>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <p>Pour les investisseurs sérieux</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">35 000</span>
+                        <span class="price-currency">FCFA/mois</span>
+                    </div>
+                    <div class="pricing-equiv">≈ 53€/mois</div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Jusqu'à 5 véhicules</li>
+                        <li><span class="check">✓</span> Tout Starter inclus</li>
+                        <li><span class="check">✓</span> GPS temps réel + alertes</li>
+                        <li><span class="check">✓</span> Rapports avancés (P&L)</li>
+                        <li><span class="check">✓</span> Géo-fencing intelligent</li>
+                        <li><span class="check">✓</span> Module garage intégré</li>
+                        <li><span class="check">✓</span> Support prioritaire</li>
+                    </ul>
+                    <a href="#waitlist" class="btn btn-primary btn-block">Commencer</a>
+                </div>
+                <div class="pricing-card" data-animate="fade-up" data-delay="300">
+                    <div class="pricing-header">
+                        <h3>Fleet</h3>
+                        <p>Pour les flottes professionnelles</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">75 000</span>
+                        <span class="price-currency">FCFA/mois</span>
+                    </div>
+                    <div class="pricing-equiv">≈ 115€/mois</div>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> Jusqu'à 20 véhicules</li>
+                        <li><span class="check">✓</span> Tout Pro inclus</li>
+                        <li><span class="check">✓</span> API avancée</li>
+                        <li><span class="check">✓</span> Multi-utilisateurs</li>
+                        <li><span class="check">✓</span> Account manager dédié</li>
+                        <li><span class="check">✓</span> Intégrations custom</li>
+                        <li><span class="check">✓</span> Rapports personnalisés</li>
+                    </ul>
+                    <a href="#waitlist" class="btn btn-outline btn-block">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">FAQ</span>
+                <h2>Questions <span class="gradient-text">fréquentes</span></h2>
+            </div>
+            <div class="faq-list" data-animate="fade-up" data-delay="100">
+                <div class="faq-item">
+                    <button class="faq-question" id="faq-btn-1">
+                        <span>Comment FleetVest empêche-t-il la fraude des chauffeurs ?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nous utilisons une combinaison de mesures : cross-validation GPS des trajets avec les revenus déclarés, intégration directe avec les API Yango/Uber pour récupérer les revenus réels, photos obligatoires du compteur kilométrique, et un système de scoring qui récompense la transparence. En Phase MVP, les chauffeurs doivent fournir une capture d'écran quotidienne de leur tableau de bord VTC.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" id="faq-btn-2">
+                        <span>Je vis en France. Comment je gère mon véhicule à Dakar ?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>C'est exactement notre proposition de valeur ! Votre dashboard est accessible 24/7 depuis n'importe où. Vous voyez la position GPS de votre véhicule en temps réel, les revenus quotidiens, l'historique de maintenance. Vous recevez des alertes automatiques et vos versements arrivent directement via Wave ou sur votre compte bancaire européen via Stripe.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" id="faq-btn-3">
+                        <span>Quel type de traceur GPS dois-je installer ?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nous recommandons des traceurs Queclink ou Teltonika, compatibles avec notre système Traccar. Nous avons des partenaires installateurs à Dakar qui peuvent équiper votre véhicule pour environ 35 000 - 50 000 FCFA, installation comprise. Le traceur est auto-alimenté par le véhicule et envoie des données en temps réel.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" id="faq-btn-4">
+                        <span>Comment sont sélectionnés les garages partenaires ?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Chaque garage partenaire passe par un processus de certification : visite sur site, vérification des qualifications des mécaniciens, audit des tarifs pratiqués, et évaluation des équipements. Nous négocions des tarifs préférentiels en échange d'un flux régulier de clients. Chaque intervention génère une facture numérique consultable sur votre dashboard.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" id="faq-btn-5">
+                        <span>Combien dois-je investir pour acheter un véhicule VTC ?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Un véhicule VTC standard (Toyota Corolla, Hyundai Accent, Kia Rio) coûte entre 5 et 9 millions FCFA (7 600€ - 13 700€) au Sénégal. Avec des revenus bruts moyens de 250 000 - 400 000 FCFA/mois pour le propriétaire, le retour sur investissement se situe entre 18 et 30 mois. Nous travaillons avec des partenaires financiers pour proposer des solutions de crédit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA / WAITLIST ============ -->
+    <section class="cta-section" id="waitlist">
+        <div class="cta-bg-effects">
+            <div class="cta-glow cta-glow-1"></div>
+            <div class="cta-glow cta-glow-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <span class="section-tag">Lancement Beta — Q4 2026</span>
+                <h2>Prêt à sécuriser votre <span class="gradient-text">investissement VTC</span> ?</h2>
+                <p>Rejoignez les premiers investisseurs à tester FleetVest. Places limitées pour la beta privée à Dakar.</p>
+                <form class="waitlist-form" id="waitlistForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="waitlist-name" placeholder="Votre nom complet" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="waitlist-email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="waitlist-profile" required>
+                                <option value="" disabled selected>Vous êtes...</option>
+                                <option value="diaspora">Investisseur Diaspora</option>
+                                <option value="local">Investisseur Local</option>
+                                <option value="chauffeur">Chauffeur VTC</option>
+                                <option value="garage">Garage / Mécanicien</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-submit" id="waitlist-submit">
+                        <span>Rejoindre la liste d'attente</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </form>
+                <p class="cta-note">🔒 Vos données sont protégées. Aucun spam, promis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <div class="logo-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect width="32" height="32" rx="8" fill="url(#logo-grad-2)"/>
+                                <path d="M8 16L14 10L20 16L14 22Z" fill="white" opacity="0.9"/>
+                                <path d="M14 16L20 10L26 16L20 22Z" fill="white" opacity="0.6"/>
+                                <defs>
+                                    <linearGradient id="logo-grad-2" x1="0" y1="0" x2="32" y2="32">
+                                        <stop stop-color="#10B981"/>
+                                        <stop offset="1" stop-color="#059669"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>FleetVest</span>
+                    </a>
+                    <p>La plateforme qui sécurise l'investissement VTC en Afrique de l'Ouest.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Produit</h4>
+                    <a href="#features">Fonctionnalités</a>
+                    <a href="#pricing">Tarifs</a>
+                    <a href="#how-it-works">Comment ça marche</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Entreprise</h4>
+                    <a href="#">À propos</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Partenaires</a>
+                    <a href="#">Carrières</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <a href="#">contact@fleetvest.com</a>
+                    <a href="#">+221 XX XXX XX XX</a>
+                    <a href="#">Dakar, Sénégal</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 FleetVest. Tous droits réservés.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Confidentialité</a>
+                    <a href="#">CGU</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
